@@ -1,7 +1,7 @@
 /*
  * informe.h
  *
- *  Created on: Oct 13, 2020
+ *  Created on: Oct 12, 2020
  *      Author: ericka.diaz
  */
 
