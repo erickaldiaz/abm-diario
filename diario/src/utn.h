@@ -4,7 +4,6 @@
  *  Created on: Oct 12, 2020
  *      Author: ericka.diaz
  */
-
 #ifndef UTN_H_
 #define UTN_H_
 
@@ -13,6 +12,5 @@ int utn_getNumberFloat(float* pResult, char* message, char* errorMessage, float 
 int utn_getName(char* pResult, int leng,char* message, char* errorMessage, int retry);
 int utn_getCuit(char* pResult, int leng,char* message, char* errorMessage, int retry);
 int utn_getDescription(char* pResult, int leng,char* message, char* errorMessage, int retry);
-
 
 #endif /* UTN_H_ */

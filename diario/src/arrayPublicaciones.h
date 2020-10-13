@@ -30,7 +30,4 @@ int publi_imprimir(Publicacion* pArray,int limite);
 int publi_buscarId(Publicacion* pArray, int limite, int valorBuscado);
 int publi_pausar(Publicacion* pArray,int limite, int indice);
 
-
-
-
 #endif /* ARRAYPUBLICACIONES_H_ */

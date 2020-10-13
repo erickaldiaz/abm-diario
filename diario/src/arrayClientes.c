@@ -11,7 +11,6 @@
 #include "ArrayClientes.h"
 #include "utn.h"
 
-
 /**
  * \brief Inicializa el array poniendo en todas las posiciones a isEmpty en 1
  * \param list Array de empleados a ser actualizado

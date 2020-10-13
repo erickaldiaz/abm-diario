@@ -4,11 +4,8 @@
  *  Created on: Oct 12, 2020
  *      Author: ericka.diaz
  */
-
 #ifndef ARRAYCLIENTES_H_
 #define ARRAYCLIENTES_H_
-
-
 
 #define NAME_LEN 51
 #define LAST_NAME_LEN 51

@@ -23,7 +23,6 @@ int main(void)
 	setbuf (stdout,NULL);
 
 	Client arrayClientes[QTY_CLIENTES];
-//	Publicacion arrayPublicaciones[QTY_PUBLICACIONES];
 
 	int option;
 	int idClientes=0;
@@ -37,11 +36,6 @@ int main(void)
 	{
 		printf("Clientes inicializado correctamente\n");
 	}
-//	if(initPublicaciones(arrayPublicaciones,QTY_PUBLICACIONES) == 0)
-//		{
-//			printf("Publicaciones inicializado correctamente \n");
-//		}
-
     do
     {
 

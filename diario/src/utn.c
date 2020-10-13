@@ -22,7 +22,6 @@ static int getDescripcion(char* pResultado, int longitud);
  * \param minimo Es el numero maximo a ser aceptado
  * \param maximo Es el minimo minimo a ser aceptado
  * \return Retorna 0 si se obtuvo el numero y -1 si no
- *
  */
 int utn_getNumber(int* pResult, char* message, char* errorMessage, int minimum, int maximum, int retry){
 
