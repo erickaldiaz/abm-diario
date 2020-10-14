@@ -78,7 +78,7 @@ int addClient(Client* list, int len, int indice, int* id)
 	{
 		if(	utn_getName(bufferCliente.name,NAME_LEN,"\nNombre del cliente?\n","\nERROR\n",2) == 0 &&
 			utn_getName(bufferCliente.lastName,LAST_NAME_LEN,"\nApellido del cliente?\n","\nERROR\n",2) == 0 &&
-			utn_getCuit(bufferCliente.cuit,CUIT_LEN,"\nCuit del cliente?\n","\nERROR\n",2) == 0)
+			utn_getCuit(bufferCliente.cuit,CUIT_LEN,"\nCuit del cliente?\n","\nERROR2\n",2) == 0)
 		{
 			reply = 0;
 			bufferCliente.id = *id;
@@ -149,12 +149,13 @@ int modClient(Client* list, int len, int indice)
 						strncpy(list[indice].lastName,arrayAuxiliary.lastName,LAST_NAME_LEN);
 					}
 			    	break;
+
 			    case 3:
 			    	if(utn_getCuit(arrayAuxiliary.cuit,CUIT_LEN,"\nIngrese el nuevo CUIT:\n","\nCUIT inválido\n",2) == 0)
-			    					{
-			    						strncpy(list[indice].cuit,arrayAuxiliary.cuit,CUIT_LEN);
-			    					}
-			    			    	break;
+			    	{
+			    		strncpy(list[indice].cuit,arrayAuxiliary.cuit,CUIT_LEN);
+			    	}
+			    	break;
 
 			 }
 			reply = 0;

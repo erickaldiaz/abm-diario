@@ -9,13 +9,13 @@
 
 #define NAME_LEN 51
 #define LAST_NAME_LEN 51
-#define CUIT_LEN 11
+#define CUIT_LEN 12
 
 typedef struct {
 	int id;
 	char name[NAME_LEN];
 	char lastName[LAST_NAME_LEN];
-	char cuit;
+	char cuit[CUIT_LEN];
 	int isEmpty; //le pongo un uno o cero para "hacer" que los elimina
 
 }Client;

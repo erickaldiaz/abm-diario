@@ -94,9 +94,9 @@ static int esNumerica(char* cadena, int limite)
 	if(cadena != NULL && limite > 0)
 	{
 		retorno = 1; // VERDADERO
-		for(int i=0;i<limite && cadena[i] != '\0';i++)
+		for(int i = 0;i < limite && cadena[i] != '\0';i++)
 		{
-			if(i==0 && (cadena[i] == '+' || cadena[i] == '-'))
+			if(i == 0 && (cadena[i] == '+' || cadena[i] == '-'))
 			{
 				continue;
 			}
@@ -301,9 +301,9 @@ static int getCuit(char* pResultado, int longitud)
 
 /**
  * \brief Solicita un CUIT al usuario, luego de verificarlo devuelve el resultado
- * \param pResultado Puntero al espacio de memoria donde se dejara el resultado de la funcion
- * \param longitud Es la longitud del array resultado
- * \param mensaje Es el mensaje a ser mostrado
+ * \param pResult Puntero al espacio de memoria donde se dejara el resultado de la funcion
+ * \param leng Es la longitud del array resultado
+ * \param message Es el mensaje a ser mostrado
  * \param mensajeError Es el mensaje de Error a ser mostrado
  * \param reintentos Cantidad de reintentos
  * \return Retorna 0 si se obtuvo el numero flotante y -1 si no
@@ -323,7 +323,7 @@ int utn_getCuit(char* pResult, int leng,char* message, char* errorMessage, int r
 			retorno = 0;
 			break;
 		}
-		printf("%s",message);
+		printf("%s",errorMessage);
 	}
 	return retorno;
 }
@@ -375,7 +375,7 @@ static int esDescripcion(char* cadena,int longitud)
 	}
 	return retorno;
 }
-//=======================================================================================
+
 /**
  * \brief Solicita una descripcion al usuario, luego de verificarlo devuelve el resultado
  * \param pResultado Puntero al espacio de memoria donde se dejara el resultado de la funcion
